@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Elga.Models;
+using Microsoft.Owin.Security.Facebook;
+using Owin.Security.Providers.VKontakte;
 
 namespace Elga
 {
@@ -34,7 +36,7 @@ namespace Elga
                         validateInterval: TimeSpan.FromMinutes(30),
                         regenerateIdentity: (manager, user) => user.GenerateUserIdentityAsync(manager))
                 }
-            });            
+            });
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // Enables the application to temporarily store user information when they are verifying the second factor in the two-factor authentication process.
@@ -54,14 +56,22 @@ namespace Elga
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            app.UseFacebookAuthentication(
-               appId: "304872333277819",
-               appSecret: "a32e03d8f311e7859a4f4ce75c2205d6");
+            app.UseFacebookAuthentication(new FacebookAuthenticationOptions
+            {
+                AppId = "304872333277819",
+                AppSecret = "a32e03d8f311e7859a4f4ce75c2205d6"
+            });
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
                 ClientId = "283139327898-fdfp1fbvo4egf2hdj3la7135ms24bjfd.apps.googleusercontent.com",
                 ClientSecret = "avrzFyWQrrWs47KUsme5m3gQ"
+            });
+
+            app.UseVKontakteAuthentication(new VKontakteAuthenticationOptions
+            {
+                ClientId = "6004000",
+                ClientSecret = "lhprVb7IKFV6xguGicXJ"
             });
         }
     }

@@ -28,7 +28,12 @@ namespace Elga
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/font-awesome.css",
+                      "~/Content/camera.css",
+                      "~/Content/slicknav.css",
+                      "~/Content/prettyPhoto.css",
+                      "~/Content/style.css"));
 
             bundles.Add(new StyleBundle("~/Content/jQuery-File-Upload").Include(
                     "~/Content/jQuery.FileUpload/css/jquery.fileupload.css",
@@ -37,6 +42,15 @@ namespace Elga
                      "~/Content/blueimp-gallery2/css/blueimp-gallery-video.css",
                        "~/Content/blueimp-gallery2/css/blueimp-gallery-indicator.css"
                    ));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Scripts/camera.min.js",
+                "~/Scripts/jquery.mobile-1.4.5.js",
+                "~/Scripts/jquery.easing.1.3.js",
+                "~/Scripts/camera.min.js",
+                "~/Scripts/myscript.js",
+                "~/Scripts/sorting.js",
+                "~/Scripts/jquery.isotope.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jQuery-File-Upload").Include(
                      //<!-- The Templates plugin is included to render the upload/download listings -->
