@@ -54,15 +54,15 @@ namespace Elga
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "304872333277819",
+               appSecret: "a32e03d8f311e7859a4f4ce75c2205d6");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "283139327898-fdfp1fbvo4egf2hdj3la7135ms24bjfd.apps.googleusercontent.com",
+                ClientSecret = "avrzFyWQrrWs47KUsme5m3gQ"
+            });
         }
     }
 }
