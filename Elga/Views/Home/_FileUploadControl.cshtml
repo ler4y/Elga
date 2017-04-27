@@ -24,7 +24,7 @@
             @Html.ValidationMessageFor(x => x.Name)
         </div>
         <div>
-            @Html.Dropdown(x => x.City, new SelectList(new List<string>(){"Dnipro"}, "Dnipro"), new { @class = "form-control col-md-12 col-xs-12 Subject", placeholder = "City *" })
+            @Html.DropDownListFor(x => x.City, new SelectList(new List<string>(){"Dnipro"}, "Dnipro"), new { @class = "form-control col-md-12 col-xs-12 Subject", placeholder = "City *" })
             @Html.ValidationMessageFor(x => x.City)
         </div>
         <div>
