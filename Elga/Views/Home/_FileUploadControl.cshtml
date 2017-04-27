@@ -13,6 +13,7 @@
 
 <div>
     <form id="fileupload" method="POST" enctype="multipart/form-data" data-url="@Url.Action("Upload", "Home")">
+        @Html.TextBox("PriceValueRegularLunch")
         <div class="row fileupload-buttonbar">
             <div class="col-lg-7">
                 <!-- The fileinput-button span is used to style the file input field as button -->
@@ -72,6 +73,35 @@
         <ol class="indicator"></ol>
     </div>
 </div>
+<div>
+    @using (Html.BeginForm("Submit", "Home"))
+    {
+        @Html.TextBox("PriceValueRegularLunch")
+        @Html.TextBox("PriceValueRegularLunch1")
+        @Html.TextBox("PriceValueRegularLunch2")
+        @Html.TextBox("PriceValueRegularLunch3")
+        @Html.TextBox("PriceValueRegularLunch4")
+        @Html.TextBox("PriceValueRegularLunch5")
+
+        <input type="submit" name="SaveButton" value="Save" />
+    }
+</div>
+
+<script>
+    $(function () {
+        $('form').submit(function () {
+                $.ajax({
+                    url: this.action,
+                    type: this.method,
+                    data: $(this).serialize(),
+                    success: function (result) {
+                        alert(result.msg);
+                    }
+                });
+            return false;
+        });
+    });
+</script>
 
 <script id="template-upload" type="text/x-tmpl">
     {% for (var i=0, file; file=o.files[i]; i++) { %}

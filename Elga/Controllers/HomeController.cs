@@ -26,7 +26,7 @@ namespace Elga.Controllers
         }
 
         [HttpPost]
-        public JsonResult Upload()
+        public JsonResult Upload(int PriceValueRegularLunch)
         {
             var httpRequest = HttpContext.Request;
 
@@ -51,6 +51,17 @@ namespace Elga.Controllers
 
             }
             return Json("Ok");
+        }
+
+        [HttpPost]
+        public ActionResult Submit(int PriceValueRegularLunch,
+            int PriceValueRegularLunch1,
+            int PriceValueRegularLunch2,
+            int PriceValueRegularLunch3,
+            int PriceValueRegularLunch4,
+            int PriceValueRegularLunch5)
+        {
+            return Json(new { msg = "adsasd" }, JsonRequestBehavior.AllowGet);
         }
     }
 }

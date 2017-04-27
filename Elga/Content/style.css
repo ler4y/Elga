@@ -47,13 +47,14 @@ body{
 .row{
 	outline:1px solid #f00;
 }*/
-.logo{
-	margin-top: 60px;
-	font-family: 'Roboto', 'sans-serif';
-	font-size:30px;
-	font-weight:700;
-	text-transform:uppercase;
-	color:#fff;
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
 }
 .logo span{
 	color:#1fcdff;
@@ -117,8 +118,7 @@ border: none;
 	padding-right:0px;
 }
 #menu{
-	//margin-top: 33px;
-	margin-top: 74px;
+	margin-top: 24px;
 	float: right;
 }
 #menu li a{
@@ -2055,15 +2055,11 @@ margin-bottom: 35px !important;
 /*                                                                    */
 	.default{
 		transition-duration: 1s;
+	    position: fixed;
+	    z-index: 999;
+	    width: 100%;
 	}
     .fixed {
-		transition-duration: 1s;
-		/*text-align:center;*/
-		z-index:999;
-        position:fixed;
-        top: -65px; 
-        padding:20px 0;
-        width:100%;
 		background-color: #101010!important;
     }
 
