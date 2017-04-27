@@ -304,6 +304,7 @@
     <Content Include="Content\images\slides\blank.gif" />
     <Content Include="Content\images\slides\thumbs\_notes\dwsync.xml" />
     <Content Include="Content\images\slides\_notes\dwsync.xml" />
+    <Content Include="Content\Static\img\logo_submarine_big.png" />
     <Content Include="Content\jQuery.FileUpload\css\jquery.fileupload-noscript.css" />
     <Content Include="Content\jQuery.FileUpload\css\jquery.fileupload-ui-noscript.css" />
     <Content Include="Content\jQuery.FileUpload\css\jquery.fileupload-ui.css" />
@@ -367,6 +368,31 @@
     <Content Include="Content\images\sliderL.png" />
     <Content Include="Content\images\socIcons.png" />
     <Content Include="Content\images\upBefor.png" />
+    <Content Include="Content\Static\css\main.css" />
+    <Content Include="Content\Static\css\reset.css" />
+    <Content Include="Content\Static\fonts\Aleo-Bold.svg" />
+    <Content Include="Content\Static\fonts\Aleo-Regular.svg" />
+    <Content Include="Content\Static\fonts\Lato-Bold.svg" />
+    <Content Include="Content\Static\fonts\Lato-Regular.svg" />
+    <Content Include="Content\Static\img\bg_img.jpg" />
+    <Content Include="Content\Static\img\bg_img2.jpg" />
+    <Content Include="Content\Static\img\bg_img3.jpg" />
+    <Content Include="Content\Static\img\bg_img_raw.jpg" />
+    <Content Include="Content\Static\img\bg_img_raw2.jpg" />
+    <Content Include="Content\Static\img\load.gif" />
+    <Content Include="Content\Static\img\mail_icon.png" />
+    <Content Include="Content\Static\index%28ajax mailchimp form%29.html" />
+    <Content Include="Content\Static\index%28bg_gradient%29.html" />
+    <Content Include="Content\Static\index%28bg_img%29.html" />
+    <Content Include="Content\Static\js\ajaxchimp.js" />
+    <Content Include="Content\Static\js\backstretch.js" />
+    <Content Include="Content\Static\js\jquery.js" />
+    <Content Include="Content\Static\js\main.js" />
+    <Content Include="Content\Static\js\TimeCircles.js" />
+    <Content Include="Content\Static\main.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\index%28bg_slider%29.html" />
     <Content Include="Scripts\blueimp-gallery2\ans-blueimp-gallery.css" />
     <Content Include="Scripts\blueimp-gallery2\ans-blueimp-gallery.js" />
     <Content Include="Scripts\blueimp-gallery2\ans-blueimp-gallery.min.css" />
@@ -796,6 +822,20 @@
     <Content Include="Views\Home\_ProjectsSlide.cshtml" />
     <Content Include="Views\Home\_NewsSlide.cshtml" />
     <Content Include="Views\Home\_ContactSlide.cshtml" />
+    <Content Include="Content\Static\fonts\Aleo-Bold.eot" />
+    <Content Include="Content\Static\fonts\Aleo-Bold.otf" />
+    <Content Include="Content\Static\fonts\Aleo-Bold.ttf" />
+    <Content Include="Content\Static\fonts\Aleo-Bold.woff" />
+    <Content Include="Content\Static\fonts\Aleo-Regular.eot" />
+    <Content Include="Content\Static\fonts\Aleo-Regular.otf" />
+    <Content Include="Content\Static\fonts\Aleo-Regular.ttf" />
+    <Content Include="Content\Static\fonts\Aleo-Regular.woff" />
+    <Content Include="Content\Static\fonts\Lato-Bold.eot" />
+    <Content Include="Content\Static\fonts\Lato-Bold.ttf" />
+    <Content Include="Content\Static\fonts\Lato-Bold.woff" />
+    <Content Include="Content\Static\fonts\Lato-Regular.eot" />
+    <Content Include="Content\Static\fonts\Lato-Regular.ttf" />
+    <Content Include="Content\Static\fonts\Lato-Regular.woff" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
