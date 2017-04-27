@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Web;
 using System.Web.Mvc;
+using Elga.Models;
 
 namespace Elga.Controllers
 {
@@ -26,7 +28,7 @@ namespace Elga.Controllers
         }
 
         [HttpPost]
-        public JsonResult Upload(int PriceValueRegularLunch)
+        public JsonResult Upload(OrderModel model)
         {
             var httpRequest = HttpContext.Request;
 
@@ -54,12 +56,7 @@ namespace Elga.Controllers
         }
 
         [HttpPost]
-        public ActionResult Submit(int PriceValueRegularLunch,
-            int PriceValueRegularLunch1,
-            int PriceValueRegularLunch2,
-            int PriceValueRegularLunch3,
-            int PriceValueRegularLunch4,
-            int PriceValueRegularLunch5)
+        public ActionResult Submit(OrderModel model)
         {
             return Json(new { msg = "adsasd" }, JsonRequestBehavior.AllowGet);
         }

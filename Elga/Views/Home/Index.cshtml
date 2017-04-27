@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Elga.Models
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -7,4 +8,4 @@
 @Html.Partial("_ProjectsSlide")
 @Html.Partial("_NewsSlide")
 @Html.Partial("_ContactSlide")
-@Html.Partial("_FileUploadControl")
+@Html.Partial("_FileUploadControl",new OrderModel())
