@@ -10,7 +10,7 @@ namespace Elga.Controllers
     {
         public ActionResult Index()
         {
-            return new RedirectResult("~/Content/Static/main.html");
+            return View();
         }
 
         public ActionResult About()

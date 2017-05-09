@@ -304,6 +304,7 @@
     <Content Include="Content\images\slides\blank.gif" />
     <Content Include="Content\images\slides\thumbs\_notes\dwsync.xml" />
     <Content Include="Content\images\slides\_notes\dwsync.xml" />
+    <Content Include="Content\logo_google.png" />
     <Content Include="Content\Static\img\logo_submarine_big.png" />
     <Content Include="Content\jQuery.FileUpload\css\jquery.fileupload-noscript.css" />
     <Content Include="Content\jQuery.FileUpload\css\jquery.fileupload-ui-noscript.css" />
@@ -370,10 +371,18 @@
     <Content Include="Content\images\upBefor.png" />
     <Content Include="Content\Static\css\main.css" />
     <Content Include="Content\Static\css\reset.css" />
-    <Content Include="Content\Static\fonts\Aleo-Bold.svg" />
-    <Content Include="Content\Static\fonts\Aleo-Regular.svg" />
-    <Content Include="Content\Static\fonts\Lato-Bold.svg" />
-    <Content Include="Content\Static\fonts\Lato-Regular.svg" />
+    <Content Include="Content\Static\fonts\Aleo-Bold.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Bold.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Static\img\bg_img.jpg" />
     <Content Include="Content\Static\img\bg_img2.jpg" />
     <Content Include="Content\Static\img\bg_img3.jpg" />
@@ -730,6 +739,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="Content\favicon\manifest.json" />
+    <None Include="Properties\PublishProfiles\SubmarinePrint - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\camera.min.js" />
     <Content Include="Scripts\current.js" />
@@ -822,20 +832,48 @@
     <Content Include="Views\Home\_ProjectsSlide.cshtml" />
     <Content Include="Views\Home\_NewsSlide.cshtml" />
     <Content Include="Views\Home\_ContactSlide.cshtml" />
-    <Content Include="Content\Static\fonts\Aleo-Bold.eot" />
-    <Content Include="Content\Static\fonts\Aleo-Bold.otf" />
-    <Content Include="Content\Static\fonts\Aleo-Bold.ttf" />
-    <Content Include="Content\Static\fonts\Aleo-Bold.woff" />
-    <Content Include="Content\Static\fonts\Aleo-Regular.eot" />
-    <Content Include="Content\Static\fonts\Aleo-Regular.otf" />
-    <Content Include="Content\Static\fonts\Aleo-Regular.ttf" />
-    <Content Include="Content\Static\fonts\Aleo-Regular.woff" />
-    <Content Include="Content\Static\fonts\Lato-Bold.eot" />
-    <Content Include="Content\Static\fonts\Lato-Bold.ttf" />
-    <Content Include="Content\Static\fonts\Lato-Bold.woff" />
-    <Content Include="Content\Static\fonts\Lato-Regular.eot" />
-    <Content Include="Content\Static\fonts\Lato-Regular.ttf" />
-    <Content Include="Content\Static\fonts\Lato-Regular.woff" />
+    <Content Include="Content\Static\fonts\Aleo-Bold.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Bold.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Bold.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Regular.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Aleo-Regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Bold.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Bold.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Static\fonts\Lato-Regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
